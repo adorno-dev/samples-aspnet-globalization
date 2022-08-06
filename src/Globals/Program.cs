@@ -10,8 +10,8 @@ var app = builder.Build();
 
 var cultures = new [] {"en-US", "pt-BR", "es-ES"};
 var cultureOptions = new RequestLocalizationOptions()
-    .SetDefaultCulture(cultures.First())
-    .AddSupportedCultures(cultures)
+    // .SetDefaultCulture(cultures.First())
+    // .AddSupportedCultures(cultures)
     .AddSupportedUICultures(cultures);
 
 app.UseRequestLocalization(cultureOptions);
